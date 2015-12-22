@@ -95,6 +95,7 @@
         <div class="container">
             <div class="row">
                 <div  id="basic" class="col-lg-12">
+                    <div class="command">
                     <h1>Get Git up and running</h1>
                     <h3 class="code">git init</h3>
                     <div class="code-gif">
@@ -105,6 +106,8 @@
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-init" target="_blank">Learn more about Git Init</a>
                         </div>
                     <p>After the repo has been set up, you can add files into the repo like you would in any other folder. They will not be saved in Git until you <span class="code">commit</span> them to the repo. Before you make the commit however, you need to <span class="code">add</span> files to the commit.</p>
+                    </div>
+                <div class="command">
                 <h3 class="code">git status</h3>
                 <div class="code-gif">
                     <img src="static/gif/git%20status.gif">
@@ -112,7 +115,9 @@
                 <p>After writing some files, you'll want to <span class="code">add</span> them to the commit. To check which files need to be added to the commit, run <span class="code">git status</span>, which will print out a list of the files and their path that have been changed since the last commit, and need to be <span class="code">add</span>ed.</p>
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-status" target="_blank">Learn more about Git Status</a>
-                        </div>                
+                        </div>    
+                    </div>
+                    <div class="command">
                     <h3 class="code">git add</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20add.gif">
@@ -120,7 +125,9 @@
                 <p>So you've made some changes, and you've used <span class="code">git status</span> to check <i>exactly which</i> files need to be <span class="code">add</span>ed to the commit. So let's get right to it, run <span class="code">git add [file name]</span> for all the files that have been changed to stage them to the commit. The command <span class="code">git stage [file name]</span> does the same thing as <span class="code">git add</span>, so you can use whichever version you like. You can also <span class="code">add</span> multiple files at the same time by listen the files one after the other, like <span class="code">git add [filename_1] [filename_2]</span>.</p>
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-add" target="_blank">Learn more about Git Add</a>
-                        </div>        
+                        </div>
+                        </div>
+                <div class="command">
                 <h3 class="code">git commit</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20commit.gif">
@@ -128,7 +135,9 @@
                 <p>Now that you've staged all your changes, you're ready to <span class="code">commit</span> the changes to Git! The syntax is <span class="code">git commit -m "[insert message here]"</span></p>
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-commit" target="_blank">Learn more about Git Commit</a>
-                        </div>      
+                        </div> 
+                    </div>
+                    <div class="command">
                 <h3 class="code">git diff</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20diff.gif">
@@ -136,7 +145,9 @@
                 <p>So you've changed files since the last commit, but you're not quite sure what changes you have made. Maybe you accidentally deleted something, and you want to check what has changed. Run <span class="code">git diff [file path/name]</span> to review the changes to the file since the last commit.</p>
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-diff" target="_blank">Learn more about Git Diff</a>
-                        </div>      
+                        </div>
+                        </div>
+                    <div class="command">
                     <h3 class="code">git log</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20log.gif">
@@ -145,7 +156,7 @@
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-log" target="_blank">Learn more about Git Log</a>
                         </div>      
-                <p>Awesome! You now know how to create a local repository, and commit files to it! Next up, we'll learn how to backtrack on changes made in previous commits.</p>
+                <p>Awesome! You now know how to create a local repository, and commit files to it! Next up, we'll learn how to backtrack on changes made in previous commits.</p></div>
                 </div
             </div>
         </div>
@@ -157,6 +168,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 id="backtrack" >Backtrack changes in Git</h1>
+                    <div class="command">
                     <h3 class="code">The HEAD Commit / git show</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20show%20HEAD.gif">
@@ -168,6 +180,8 @@
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-show" target="_blank">Learn more about Git Show</a>
                         </div>   
+                        </div>
+                    <div class="command">
                     <h3 class="code">git checkout</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20checkout.gif">
@@ -176,6 +190,8 @@
                   <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Checkout</a>
                         </div> 
+                        </div>
+                    <div class="command">
                     <h3 class="code">git reset</h3>
                     <div class="code-gif">
                     <img src="static/gif/gif%20reset%20HEAD.gif">
@@ -188,6 +204,7 @@
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-reset" target="_blank">Learn more about Git Reset</a>
                         </div> 
+                        </div>
                 </div>
             </div>
         </div>
@@ -199,6 +216,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 id="branch">Branching in Git</h1>
+                    <div class="command">
+                    <h3 class="code">git branch</h3>
+                        <div class="code-gif">
+                        <img src="static/gif/git%20branch.gif">
+                        </div>
+                    <p>Up to this point, we've been working in a single branch, <span class="code">master</span>. If you look on the terminal animations above, you see that <span class="code">(master)</span> appears on all the windows (except for this one :p ). Git allows for the creation of branches, which allow us to experiment with different versions of the project. A branch is essentially another instance of the project running within the project repo, allowing commits to be made that don't affect the <span class="code">master</span> branch.</p>
+                    </div>
                 </div>
             </div>
         </div>

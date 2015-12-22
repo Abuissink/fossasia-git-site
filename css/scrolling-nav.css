@@ -85,6 +85,11 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 20px;
 }
 
+.command {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .btn-install {
     border-color: black;
     background: transparent;
