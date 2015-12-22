@@ -91,10 +91,10 @@
     </section>
 
     <!-- About Section -->
-    <section id="basic" class="basic-section">
+    <section class="basic-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div  id="basic" class="col-lg-12">
                     <h1>Get Git up and running</h1>
                     <h3 class="code">git init</h3>
                     <div class="code-gif">
@@ -117,17 +117,28 @@
                     <img src="static/gif/git%20commit.gif">
                     </div>
                 <p>Now that you've staged all your changes, you're ready to <span class="code">commit</span> the changes to Git! Make sure you've staged <i>all</i> the changes, or <span class="code">git commit</span> will throw back an error. The syntax is <span class="code">git commit -m "[insert message here]"</span></p>
-                </div> //column div
+                <h3 class="code">git diff</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20diff.gif">
+                    </div>
+                <p>So you've changed files since the last commit, but you're not quite sure what changes you have made. Maybe you accidentally deleted something, and you want to check what has changed. Run <span class="code">git diff [file path/name]</span> to review the changes to the file since the last commit.</p>
+                    <h3 class="code">git log</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20log.gif">
+                    </div>
+                    <p>So say you want to see a log of all the commits that have taken place in the repo. You'd simply run <span class="code">git log</span>, which prints out a list of all previous commits. Notice that each commit has a unique ID number. You may need to press 'q' to exit <span class="code">git log</span>. This command may not seem useful right now, but it will come in handy a lot once you learn more Git. </p>
+                <p>Awesome! You now know how to create a local repository, and commit files to it! Next up, we'll learn how to backtrack on changes made in previous commits.</p>
+                </div
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section class="services-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1 id="services" >Services Section</h1>
                 </div>
             </div>
         </div>
