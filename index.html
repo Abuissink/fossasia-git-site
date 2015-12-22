@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans' rel='stylesheet' type='text/css'>
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Learn Git with FOSSASIA</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,18 +41,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Learn Git with FOSSASIA</a>
+                <a class="navbar-brand page-scroll foss" href="#page-top" style="color:#a73737;">Learn Git with FOSSASIA</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav pull-left">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#basic">Basic Git Commands</a>
+                        <a class="page-scroll" href="#basic">Get Git Up and Running</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Backtrack changes in Git</a>
@@ -62,6 +62,9 @@
                     </li>
                     <li>
                         <a class="page-scoll" href="#remote">Using Git with GitHub</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll foss" href="http://fossasia.org" style="color:#a73737;">FOSSASIA.org</a>
                     </li>
                 </ul>
             </div>
@@ -77,7 +80,11 @@
                 <div class="col-lg-12">
                     <h1>Learn Git with FOSSASIA</h1>
                     <p>What is Git? Git is a type of software called a <i>Version Control System</i>. With it, you can manage projects that you, and other people around the world, make and contribute to, without fear of losing code or breaking the project's code. By following along with this tutorial, you'll learn first how to set up Git for projects on your local computer, and build up to using GitHub and being able to contribute to open-source software projects!</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click this button to begin your Git journey!</a>
+                    <p>But first, you'll need to check you have Git installed on your system. Try typing <span class="code">git</span> in the terminal if you are on Linux or Mac OS X. If you are on Windows, or the <span class="code">git</span> command fails, click the button below to get install instructions.</p>
+                    <div class="install-button">
+                    <a class="btn btn-default btn-install page-scroll" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target='_blank'>Git Installation Instructions</a>
+                        </div>
+                    <a class="btn btn-default page-scroll" href="#basic">Is Git installed? Click this button to begin your Git journey!</a>
                 </div>
             </div>
         </div>
@@ -88,10 +95,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Basic Git Commands</h1>
+                    <h1>Get Git up and running</h1>
                     <h3 class="code">git init</h3>
+                    <div class="code-gif">
                     <img src="static/gif/git%20init.gif">
-                </div>
+                    </div>
+                    <p><span class='code'>Git init</span> sets up a folder as a Git repo, allowing you to use further <span class="code">git</span> commands. Make sure you are in the folder you want to set up for Git before using this command. A folder containing a project set up for Git is called a <i>repository</i>.</p>
+                    <p>After the repo has been set up, you can add files into the repo like you would in any other folder. They will not be saved in Git until you <span class="code">commit</span> them to the repo. Before you make the commit however, you need to <span class="code">add</span> files to the commit.</p>
+                <h3 class="code">git status</h3>
+                <div class="code-gif">
+                    <img src="static/gif/git%20status.gif">
+                    </div>
+                <p>After writing some files, you'll want to <span class="code">add</span> them to the commit. To check which files need to be added to the commit, run <span class="code">git status</span>, which will print out a list of the files and their path that have been changed since the last commit, and need to be <span class="code">add</span>ed.</p>
+                <h3 class="code">git add</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20add.gif">
+                    </div>
+                <p>So you've made some changes, and you've used <span class="code">git status</span> to check <i>exactly which</i> files need to be <span class="code">add</span>ed to the commit. So let's get right to it, run <span class="code">git add [file name]</span> for all the files that have been changed to stage them to the commit. The command <span class="code">git stage [file name]</span> does the same thing as <span class="code">git add</span>, so you whichever version you like.</p>
+                <h3 class="code">git commit</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20commit.gif">
+                    </div>
+                <p>Now that you've staged all your changes, you're ready to <span class="code">commit</span> the changes to Git! Make sure you've staged <i>all</i> the changes, or <span class="code">git commit</span> will throw back an error. The syntax is <span class="code">git commit -m "[insert message here]"</span></p>
+                </div> //column div
             </div>
         </div>
     </section>
