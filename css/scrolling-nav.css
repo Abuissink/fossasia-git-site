@@ -68,7 +68,20 @@ of those sections to manage the look and feel of the site. */
     font-family: "Roboto Mono", monospace;
 }
 
+.btn {
+    border-radius: 0px;
+    border-color: #A73737;
+    background-color: #A73737;
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    width: 600px;
+}
+
 .install-button {
+    padding-bottom: 20px;
+}
+
+.button {
     padding-bottom: 20px;
 }
 
@@ -78,6 +91,17 @@ of those sections to manage the look and feel of the site. */
     color: black;
 }
 
+.btn-learnmore {
+    border-color: black;
+    background: transparent;
+    color: black;
+    border-radius: 0px;
+    width: 400px;
+}
+
+.btn-learnmore a:hover{
+    background-color: gray;
+}
 .foss{
     color: #A73737;
 }
@@ -101,7 +125,7 @@ of those sections to manage the look and feel of the site. */
     font-family: "Open Sans", sans-serif;
 }
 
-.services-section {
+.backtrack-section {
     height: 100%;
    /* padding-top: 300px; */
     text-align: center;
@@ -109,10 +133,22 @@ of those sections to manage the look and feel of the site. */
   /*  padding-bottom: 150px; */
 }
 
-.contact-section {
+.branch-section {
     height: 100%;
    /* padding-top: 150px; */
     text-align: center;
     background: #eee;
   /*  padding-bottom: 150px; */
+}
+
+.remote-section {
+    height: 100%;
+   /* padding-top: 150px; */
+    text-align: center;
+    background: #eee;
+  /*  padding-bottom: 150px; */
+}
+
+secction {
+    padding-bottom: 300px;
 }

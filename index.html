@@ -55,10 +55,10 @@
                         <a class="page-scroll" href="#basic">Get Git Up and Running</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Backtrack changes in Git</a>
+                        <a class="page-scroll" href="#backtrack">Backtrack changes in Git</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Branching in Git</a>
+                        <a class="page-scroll" href="#branch">Branching in Git</a>
                     </li>
                     <li>
                         <a class="page-scoll" href="#remote">Using Git with GitHub</a>
@@ -101,55 +101,115 @@
                     <img src="static/gif/git%20init.gif">
                     </div>
                     <p><span class='code'>Git init</span> sets up a folder as a Git repo, allowing you to use further <span class="code">git</span> commands. Make sure you are in the folder you want to set up for Git before using this command. A folder containing a project set up for Git is called a <i>repository</i>.</p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-init" target="_blank">Learn more about Git Init</a>
+                        </div>
                     <p>After the repo has been set up, you can add files into the repo like you would in any other folder. They will not be saved in Git until you <span class="code">commit</span> them to the repo. Before you make the commit however, you need to <span class="code">add</span> files to the commit.</p>
                 <h3 class="code">git status</h3>
                 <div class="code-gif">
                     <img src="static/gif/git%20status.gif">
                     </div>
                 <p>After writing some files, you'll want to <span class="code">add</span> them to the commit. To check which files need to be added to the commit, run <span class="code">git status</span>, which will print out a list of the files and their path that have been changed since the last commit, and need to be <span class="code">add</span>ed.</p>
-                <h3 class="code">git add</h3>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-status" target="_blank">Learn more about Git Status</a>
+                        </div>                
+                    <h3 class="code">git add</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20add.gif">
                     </div>
-                <p>So you've made some changes, and you've used <span class="code">git status</span> to check <i>exactly which</i> files need to be <span class="code">add</span>ed to the commit. So let's get right to it, run <span class="code">git add [file name]</span> for all the files that have been changed to stage them to the commit. The command <span class="code">git stage [file name]</span> does the same thing as <span class="code">git add</span>, so you whichever version you like.</p>
+                <p>So you've made some changes, and you've used <span class="code">git status</span> to check <i>exactly which</i> files need to be <span class="code">add</span>ed to the commit. So let's get right to it, run <span class="code">git add [file name]</span> for all the files that have been changed to stage them to the commit. The command <span class="code">git stage [file name]</span> does the same thing as <span class="code">git add</span>, so you can use whichever version you like. You can also <span class="code">add</span> multiple files at the same time by listen the files one after the other, like <span class="code">git add [filename_1] [filename_2]</span>.</p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-add" target="_blank">Learn more about Git Add</a>
+                        </div>        
                 <h3 class="code">git commit</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20commit.gif">
                     </div>
-                <p>Now that you've staged all your changes, you're ready to <span class="code">commit</span> the changes to Git! Make sure you've staged <i>all</i> the changes, or <span class="code">git commit</span> will throw back an error. The syntax is <span class="code">git commit -m "[insert message here]"</span></p>
+                <p>Now that you've staged all your changes, you're ready to <span class="code">commit</span> the changes to Git! The syntax is <span class="code">git commit -m "[insert message here]"</span></p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-commit" target="_blank">Learn more about Git Commit</a>
+                        </div>      
                 <h3 class="code">git diff</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20diff.gif">
                     </div>
                 <p>So you've changed files since the last commit, but you're not quite sure what changes you have made. Maybe you accidentally deleted something, and you want to check what has changed. Run <span class="code">git diff [file path/name]</span> to review the changes to the file since the last commit.</p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-diff" target="_blank">Learn more about Git Diff</a>
+                        </div>      
                     <h3 class="code">git log</h3>
                     <div class="code-gif">
                     <img src="static/gif/git%20log.gif">
                     </div>
                     <p>So say you want to see a log of all the commits that have taken place in the repo. You'd simply run <span class="code">git log</span>, which prints out a list of all previous commits. Notice that each commit has a unique ID number. You may need to press 'q' to exit <span class="code">git log</span>. This command may not seem useful right now, but it will come in handy a lot once you learn more Git. </p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-log" target="_blank">Learn more about Git Log</a>
+                        </div>      
                 <p>Awesome! You now know how to create a local repository, and commit files to it! Next up, we'll learn how to backtrack on changes made in previous commits.</p>
                 </div
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section">
+    <!-- Backtrack Section -->
+    <section class="backtrack-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 id="services" >Services Section</h1>
+                    <h1 id="backtrack" >Backtrack changes in Git</h1>
+                    <h3 class="code">The HEAD Commit / git show</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20show%20HEAD.gif">
+                    </div>
+                    <p>The command <span class="code">git show [commit]</span> is handy if we want to see exactly what a commit changed. The command prints out a log of all the lines added/deleted, and files changed in the specified commit. The HEAD commit is the most recent commit. To see previous commits, use the syntax <span class="code">HEAD~n</span> where <span class="code">n</span> is how far back past the HEAD commit you want to go. For example, the second most recent commit would be <span class="code">HEAD~1</span>.</p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="http://www.sbf5.com/~cduan/technical/git/git-1.shtml#heads" target="_blank">Learn more about HEAD</a>
+                        </div>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-show" target="_blank">Learn more about Git Show</a>
+                        </div>   
+                    <h3 class="code">git checkout</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20checkout.gif">
+                    </div>
+                    <p>So sometimes, you make mistakes. Hey, we all do. What happens if you make mistakes in your code, we know how to use <span class="code">git diff</span> to check exactly what you changed (if you can't remember, no biggie, just check up the page a bit). If you regret making all your changes in a certain file, you can use <span class="code">git checkout HEAD [filename]</span> to restore a certain file to its HEAD version. We'll learn more about <span class="code">git checkout</span> later when we learn more about branches.</p>
+                  <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Checkout</a>
+                        </div> 
+                    <h3 class="code">git reset</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/gif%20reset%20HEAD.gif">
+                    </div>
+                    <p>It is good Git practice to keep commits to only one topic. If you've accidentally <span class="code">stage</span>d a file for a commit (remember how we learnt that at the beginning?) The command <span class="code">git reset HEAD [filename]</span> resets the file in the staging area to the HEAD version (from the last commit) but keeps the changes in the working directory (as opposed to <span class="code">git checkout</span>, which changes the file in the working directory itself back to the HEAD commit.</p>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20reset%20SHA.gif">
+                    </div>
+                    <p><span class="code">git reset</span> can also be used to reset your project to a happier, stabler commit. Like in the gif above, you'll need the first seven characters of the ID number, or SHA, written in <span class="code">git log</span>. Alternatively, you can use the <span class="code">HEAD~n</span> syntax instead, if you wish. To recap, <span code="code">reset</span> reverts the project to a previous state, and Git forgets about the commits that went after that state.</p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-reset" target="_blank">Learn more about Git Reset</a>
+                        </div> 
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- Branch Section -->
+    <section class="branch-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1 id="branch">Branching in Git</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+    <!-- Remote Section -->
+    <section class="remote-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 id="remote">Using Git with GitHub</h1>
                 </div>
             </div>
         </div>
