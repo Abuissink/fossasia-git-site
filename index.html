@@ -310,6 +310,9 @@ otherbranch version of line<br>
                         <img src="static/gif/git%20clone.gif">
                         </div>
                     <p>Once, you've signed up/logged into GitHub, you'll want to start contributing to a repo. Once you find one that suits your fancy, click the 'Fork' button to copy the main repo into a personal version listed under your name. All GitHub repos have the url <span class="code">github.com/username/reponame</span>. Once you're in your personal repo, find the HTTPS path in the top right of the repo (see above gif). Make sure you have your personal fork, as you probably won't be able to <span class="code">push</span> your changes to the main repo. Copy that URL, and open up a terminal in the folder where you'd like the repo folder to be located. Run <span class="code">git clone [url]</span> and a folder containing the HEAD commit from the GitHub repo will now exist locally on your computer.</p>
+                        <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-clone" target="_blank">Learn more about Git Clone</a>
+                        </div>
                     </div>
                     <div class="command">
                     <h3 class="code">git pull</h3>
@@ -320,9 +323,38 @@ otherbranch version of line<br>
                     <a class="btn btn-learnmore page-scroll" href="#mergeconflicts" target="_blank">Remind me how to deal with merge conflicts</a>
                         </div> 
                         <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Pull</a>
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-pull" target="_blank">Learn more about Git Pull</a>
                         </div> 
                     </div>
+                    <div class="command">
+                    <h3 class="code">git push</h3>
+                    <div class="code-gif">
+                    <img src="static/gif/git%20push.gif">
+                    </div>
+                    <p><span class="code">Git push</span> is the opposite of <span class="code">git pull</span> and the other half of the sync process. This command takes the commits not registered with the remote repo and registers them there, uploading the new changes to the server. Unlike <span class="code">pull, push</span> requires you to authenticate, just give it your GitHub username and password (assuming the repo is on GitHub!) and the upload should be successful. If not, you may have to use <span class="code">git pull</span> changes from <span class="code">origin</span> first.</p>
+                       <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-push" target="_blank">Learn more about Git Push</a>
+                        </div>
+                    </div>
+                    <div class="command">
+                    <h3 class="code">git rebase</h3>
+                    <div class="code-gif">
+                        <img src="static/gif/git%20rebase%20-i.gif"
+                        </div>
+                    <p><span class="code">Git rebase</span> is probably the most confusing command covered in this tutorial, but it's the most powerful. <span class="code">Rebase</span> is essentially moving a branch from one commit to another. It (like most Git commands) has many different options, but the one shown above, and the one arguably used the most often is <span class="code">git rebase -i HEAD~n</span>, which allows you to <span class="code">squash</span> or <span class="code">flatten</span> several different commits. Once Nano (or whatever your default text editor is) has loaded, you will see a list of all the commits you specified all marked <span class="code">pick</span>. You must keep at least one as <span class="code">pick</span>, but you can change commits listed below a <span class="code">pick</span> to either <span class="code">squash / s</span> or <span class="code">flatten /f</span> to merge their commits with the nearest-up commit marked as <span class="code">pick</span>, keeping and discarding their commit messages respectively. This comes in handy when making a pull request, as it means you only have to deal with one commit in the request.</p>
+                    </div>
+                    <div class="command">
+                        <h2>Congratulations- that's the end of this quick tutorial!</h2>
+                        <h3 class="code">Now What?</h3>
+                        <div class="code-gif"><img src="static/gif/ending.gif"</div>
+                        <p>FOSSASIA has a site specifically for this purpose, helping to get people introduced into the world of Free and Open-Source Software (FOSS). Feel free to check it out and get ideas for how to help- we'd love to have you on-board.</p>
+                        <p>Also, if you're a pre-University student aged 13-17, come check out Google Code-In. You can contribute to FOSSASIA with the help of mentors, and win awesome prizes too. That's where this site was made!</p>
+                            <a class="btn btn-default page-scroll" href="http://fossasia.github.io/whatcanidofor.fossasia.org">What Can I Do For FOSSASIA?</a>
+                            <div class="bottom-button">
+                    <a class="btn btn-default btn-install page-scroll" href="https://developers.google.com/open-source/gci/?hl=en" target='_blank'>Learn more about Google Code-In</a>
+                        </div>
+                </div>
+                        </div>
                 </div>
             </div>
         </div>

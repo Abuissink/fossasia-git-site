@@ -81,6 +81,10 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 20px;
 }
 
+.bottom-button {
+    padding-top: 20px;
+}
+
 .button {
     padding-bottom: 20px;
 }
