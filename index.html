@@ -1,70 +1,83 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans' rel='stylesheet' type='text/css'>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans'
+    rel='stylesheet' type='text/css'>
 
-    <title>Learn Git with FOSSASIA</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <title>Learn Git with FOSSASIA</title><!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<body data-spy="scroll" data-target=".navbar-fixed-top" id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">                                                                                                                             
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll foss" href="#page-top" style="color:#a73737;">Learn Git with FOSSASIA</a>
-            </div>
 
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button class="navbar-toggle" data-target=
+                ".navbar-ex1-collapse" data-toggle="collapse" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button> <a class=
+                "navbar-brand page-scroll foss" href="#page-top" style=
+                "color:#a73737;">Learn Git with FOSSASIA</a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
+
+
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav pull-left">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
+
+
                     <li>
-                        <a class="page-scroll" href="#basic">Get Git Up and Running</a>
+                        <a class="page-scroll" href="#basic">Get Git Up and
+                        Running</a>
                     </li>
+
+
                     <li>
-                        <a class="page-scroll" href="#backtrack">Backtrack changes in Git</a>
+                        <a class="page-scroll" href="#backtrack">Backtrack
+                        changes in Git</a>
                     </li>
+
+
                     <li>
-                        <a class="page-scroll" href="#branch">Branching in Git</a>
+                        <a class="page-scroll" href="#branch">Branching in
+                        Git</a>
                     </li>
+
+
                     <li>
-                        <a class="page-scoll" href="#remote">Using Git with GitHub</a>
+                        <a class="page-scoll" href="#remote">Using Git with
+                        GitHub</a>
                     </li>
+
+
                     <li>
-                        <a class="page-scroll foss" href="http://fossasia.org" style="color:#a73737;">FOSSASIA.org</a>
+                        <a class="page-scroll foss" href="http://fossasia.org"
+                        style="color:#a73737;">FOSSASIA.org</a>
                     </li>
                 </ul>
             </div>
@@ -72,309 +85,879 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
+
+
+    <section class="intro-section" id="intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Learn Git with FOSSASIA</h1>
-                    <p><b>What is Git? </b>Git is a type of software called a <i>Version Control System</i>. With it, you can manage projects that you, and other people around the world, make and contribute to, without fear of losing code or breaking the project's code. By following along with this tutorial, you'll learn first how to set up Git for projects on your local computer, and build up to using GitHub and being able to contribute to open-source software projects!</p>
-                    <p>But first, you'll need to check you have Git installed on your system. Try typing <span class="code">git</span> in the terminal if you are on Linux or Mac OS X. If you are on Windows, or the <span class="code">git</span> command fails, click the button below to get install instructions.</p>
-                    <div class="install-button">
+
+
+                    <p><b>What is Git?</b> Git is a type of software called a
+                    <i>Version Control System</i>. With it, you can manage
+                    projects that you, and other people around the world, make
+                    and contribute to, without fear of losing code or breaking
+                    the project's code. By following along with this tutorial,
+                    you'll learn first how to set up Git for projects on your
+                    local computer, and build up to using GitHub and being able
+                    to contribute to open-source software projects!</p>
+
+
+                    <p>But first, you'll need to check you have Git installed
+                    on your system. Try typing <span class="code">git</span> in
+                    the terminal if you are on Linux or Mac OS X. If you are on
+                    Windows, or the <span class="code">git</span> command
+                    fails, check the tabs below to learn how to install
+                    Git.</p>
+                    <!--  <div class="install-button">
                     <a class="btn btn-default btn-install page-scroll" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target='_blank'>Git Installation Instructions</a>
+                        </div> -->
+
+
+                    <ul class="nav nav-pills">
+                        <li class="active">
+                            <a data-toggle="pill" href="#windows" class="btn-pill navpill">Windows</a>
+                        </li>
+
+
+                        <li>
+                            <a data-toggle="pill" href=
+                            "#ubuntu" class="btn-pill navpill">Ubuntu/Debian</a>
+                        </li>
+
+
+                        <li>
+                            <a data-toggle="pill" href="#fedora" class="btn-pill navpill">Fedora</a>
+                        </li>
+
+
+                        <li>
+                            <a data-toggle="pill" href="#mac" class="btn-pill navpill">Mac OS X</a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="pill" href="#other" class="btn-pill navpill">Other Linux Distros</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="windows">
+                            <h3 class="code-title">Windows Install Instructions</h3>
+
+
+                            <p>There are a few ways to install Git on Windows.
+                            The most official build is available for download
+                            on the Git website. Just go to <a href=
+                            "http://git-scm.com/download/win%20and%20the%20download%20will%20start%20automatically">
+                            this link</a>. Note that this is a project called
+                            Git for Windows, which is separate from Git itself;
+                            for more information on it, go to <a href=
+                            "https://git-for-windows.github.io/">this
+                            page</a>.</p>
+
+
+                            <p>Another easy way to get Git installed is by
+                            installing GitHub for Windows. The installer
+                            includes a command line version of Git as well as
+                            the GUI. It also works well with Powershell, and
+                            sets up solid credential caching and sane CRLF
+                            settings. We’ll learn more about those things a
+                            little later, but suffice it to say they’re things
+                            you want. You can download this from the GitHub for
+                            Windows website, at <a href=
+                            "http://windows.github.com">http://windows.github.com</a></p>
                         </div>
-                    <a class="btn btn-default page-scroll" href="#basic">Is Git installed? Click this button to begin your Git journey!</a>
+
+
+                        <div class="tab-pane fade" id="ubuntu">
+                            <h3 class="code-title">Ubuntu/Debian Linux Install Instructions</h3>
+
+
+                            <p>You can install Git using <span class=
+                            "code">apt-get</span>. Just run the command
+                            <span class="code">$ sudo apt-get install
+                            git-all</span></p>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="fedora">
+                            <h3 class="code-title">Fedora Install Instructions</h3>
+
+
+                            <p>You can install Git using <span class=
+                            "code">yum</span>. Just run the command
+                            <span class="code">$ sudo yum install
+                            git-all</span></p>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="mac">
+                            <h3 class="code-title">Mac OS X Install Instructions</h3>
+
+
+                            <p>You can install Git using <span class=
+                            "code">brew</span>. Just run the command
+                            <span class="code">$ brew install git</span></p>
+                        </div>
+
+                         <div class="tab-pane fade" id="other">
+                            <h3 class="code-title">Other Linux Install Instructions</h3>
+                            <p>
+                                Gentoo:
+                                <span class="code">$ emerge --ask --verbose dev-vcs/git</span> </p>
+                             <p>
+                                 Arch Linux:
+                                 <span class="code">$ pacman -S git</span> </p>
+                             <p>
+                                 openSUSE:
+                                 <span class="code">$ zypper install git</span> </p>
+                             <p>
+                                 FreeBSD:
+                                 <span class="code">$ cd /usr/ports/devel/git</span><br>
+                                 <span class="code">$ make install</span></p>
+                             <p>
+                                 Solaris 11 Express:
+                                 <span class="code">$ pkg install developer/versioning/git</span></p>
+                             <p>
+                                 OpenBSD:
+                                 <span class="code">$ pkg_add git</span></p>
+                    </div>
+                    </div>
+                    <a class="btn btn-default page-scroll" href="#basic">Is Git
+                    installed? Click this button to begin your Git journey!</a>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- About Section -->
+
+
     <section class="basic-section">
         <div class="container">
             <div class="row">
-                <div  id="basic" class="col-lg-12">
+                <div class="col-lg-12" id="basic">
                     <div class="command">
-                    <h1>Get Git up and running</h1>
-                    <h3 class="code">git init</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20init.gif">
-                    </div>
-                    <p><span class='code'>Git init</span> sets up a folder as a Git repo, allowing you to use further <span class="code">git</span> commands. Make sure you are in the folder you want to set up for Git before using this command. A folder containing a project set up for Git is called a <i>repository</i>.</p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-init" target="_blank">Learn more about Git Init</a>
-                        </div>
-                    <p>After the repo has been set up, you can add files into the repo like you would in any other folder. They will not be saved in Git until you <span class="code">commit</span> them to the repo. Before you make the commit however, you need to <span class="code">add</span> files to the commit.</p>
-                    </div>
-                <div class="command">
-                <h3 class="code">git status</h3>
-                <div class="code-gif">
-                    <img src="static/gif/git%20status.gif">
-                    </div>
-                <p>After writing some files, you'll want to <span class="code">add</span> them to the commit. To check which files need to be added to the commit, run <span class="code">git status</span>, which will print out a list of the files and their path that have been changed since the last commit, and need to be <span class="code">add</span>ed.</p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-status" target="_blank">Learn more about Git Status</a>
-                        </div>    
-                    </div>
-                    <div class="command">
-                    <h3 class="code">git add</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20add.gif">
-                    </div>
-                <p>So you've made some changes, and you've used <span class="code">git status</span> to check <i>exactly which</i> files need to be <span class="code">add</span>ed to the commit. So let's get right to it, run <span class="code">git add [file name]</span> for all the files that have been changed to stage them to the commit. The command <span class="code">git stage [file name]</span> does the same thing as <span class="code">git add</span>, so you can use whichever version you like. You can also <span class="code">add</span> multiple files at the same time by listen the files one after the other, like <span class="code">git add [filename_1] [filename_2]</span>.</p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-add" target="_blank">Learn more about Git Add</a>
-                        </div>
-                        </div>
-                <div class="command">
-                <h3 class="code">git commit</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20commit.gif">
-                    </div>
-                <p>Now that you've staged all your changes, you're ready to <span class="code">commit</span> the changes to Git! The syntax is <span class="code">git commit -m "[insert message here]"</span></p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-commit" target="_blank">Learn more about Git Commit</a>
-                        </div> 
-                    </div>
-                    <div class="command">
-                <h3 class="code">git diff</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20diff.gif">
-                    </div>
-                <p>So you've changed files since the last commit, but you're not quite sure what changes you have made. Maybe you accidentally deleted something, and you want to check what has changed. Run <span class="code">git diff [file path/name]</span> to review the changes to the file since the last commit.</p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-diff" target="_blank">Learn more about Git Diff</a>
-                        </div>
-                        </div>
-                    <div class="command">
-                    <h3 class="code">git log</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20log.gif">
-                    </div>
-                    <p>So say you want to see a log of all the commits that have taken place in the repo. You'd simply run <span class="code">git log</span>, which prints out a list of all previous commits. Notice that each commit has a unique ID number. You may need to press 'q' to exit <span class="code">git log</span>. This command may not seem useful right now, but it will come in handy a lot once you learn more Git. </p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-log" target="_blank">Learn more about Git Log</a>
-                        </div>      
-                <p>Awesome! You now know how to create a local repository, and commit files to it! Next up, we'll learn how to backtrack on changes made in previous commits.</p></div>
-                    <div class="command">
-                    <h3 class="code">git stash</h3>
-                    <div class="code-gif">
-                        <img src="static/gif/git stash.gif">
-                        </div>
-                    <p>So sometimes you want to save your changes with Git but don't want to make the step to a whole new commit next time. Easy! Just run <span class="code">git stash</span> and Git will make a record of your changes but not make a commit. To apply the stashed changes later, just run <span class="code">git stash apply</span>. This command comes in handy when you need to save your changes, when you switch branches, for instance (more on this later).</p>
-                        <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/book/en/v1/Git-Tools-Stashing" target="_blank">Learn more about Stashing in Git</a>
-                        </div>
-                    </div>
-                </div
-            </div>
-            </div>
-    </section>
+                        <h1>Get Git up and running</h1>
 
+
+                        <h3 class="code-title">git init</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20init.gif">
+                        </div>
+
+
+                        <p><span class='code'>Git init</span> sets up a folder
+                        as a Git repo, allowing you to use further <span class=
+                        "code">git</span> commands. Make sure you are in the
+                        folder you want to set up for Git before using this
+                        command. A folder containing a project set up for Git
+                        is called a <i>repository</i>.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-init" target=
+                            "_blank">Learn more about Git Init</a>
+                        </div>
+
+
+                        <p>After the repo has been set up, you can add files
+                        into the repo like you would in any other folder. They
+                        will not be saved in Git until you <span class=
+                        "code">commit</span> them to the repo. Before you make
+                        the commit however, you need to <span class=
+                        "code">add</span> files to the commit.</p>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git status</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20status.gif">
+                        </div>
+
+
+                        <p>After writing some files, you'll want to
+                        <span class="code">add</span> them to the commit. To
+                        check which files need to be added to the commit, run
+                        <span class="code">git status</span>, which will print
+                        out a list of the files and their path that have been
+                        changed since the last commit, and need to be
+                        <span class="code">add</span>ed.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-status" target=
+                            "_blank">Learn more about Git Status</a>
+                        </div>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git add</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20add.gif">
+                        </div>
+
+
+                        <p>So you've made some changes, and you've used
+                        <span class="code">git status</span> to check
+                        <i>exactly which</i> files need to be <span class=
+                        "code">add</span>ed to the commit. So let's get right
+                        to it, run <span class="code">git add [file
+                        name]</span> for all the files that have been changed
+                        to stage them to the commit. The command <span class=
+                        "code">git stage [file name]</span> does the same thing
+                        as <span class="code">git add</span>, so you can use
+                        whichever version you like. You can also <span class=
+                        "code">add</span> multiple files at the same time by
+                        listen the files one after the other, like <span class=
+                        "code">git add [filename_1] [filename_2]</span>.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-add" target=
+                            "_blank">Learn more about Git Add</a>
+                        </div>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git commit</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20commit.gif">
+                        </div>
+
+
+                        <p>Now that you've staged all your changes, you're
+                        ready to <span class="code">commit</span> the changes
+                        to Git! The syntax is <span class="code">git commit -m
+                        "[insert message here]"</span></p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-commit" target=
+                            "_blank">Learn more about Git Commit</a>
+                        </div>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git diff</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20diff.gif">
+                        </div>
+
+
+                        <p>So you've changed files since the last commit, but
+                        you're not quite sure what changes you have made. Maybe
+                        you accidentally deleted something, and you want to
+                        check what has changed. Run <span class="code">git diff
+                        [file path/name]</span> to review the changes to the
+                        file since the last commit.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-diff" target=
+                            "_blank">Learn more about Git Diff</a>
+                        </div>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git log</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20log.gif">
+                        </div>
+
+
+                        <p>So say you want to see a log of all the commits that
+                        have taken place in the repo. You'd simply run
+                        <span class="code">git log</span>, which prints out a
+                        list of all previous commits. Notice that each commit
+                        has a unique ID number. You may need to press 'q' to
+                        exit <span class="code">git log</span>. This command
+                        may not seem useful right now, but it will come in
+                        handy a lot once you learn more Git.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-log" target=
+                            "_blank">Learn more about Git Log</a>
+                        </div>
+
+
+                        <p>Awesome! You now know how to create a local
+                        repository, and commit files to it! Next up, we'll
+                        learn how to backtrack on changes made in previous
+                        commits.</p>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git stash</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20stash.gif">
+                        </div>
+
+
+                        <p>So sometimes you want to save your changes with Git
+                        but don't want to make the step to a whole new commit
+                        next time. Easy! Just run <span class="code">git
+                        stash</span> and Git will make a record of your changes
+                        but not make a commit. To apply the stashed changes
+                        later, just run <span class="code">git stash
+                        apply</span>. This command comes in handy when you need
+                        to save your changes, when you switch branches, for
+                        instance (more on this later).</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/book/en/v1/Git-Tools-Stashing"
+                            target="_blank">Learn more about Stashing in
+                            Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Backtrack Section -->
+
+
     <section class="backtrack-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 id="backtrack" >Backtrack changes in Git</h1>
+                    <h1 id="backtrack">Backtrack changes in Git</h1>
+
+
                     <div class="command">
-                    <h3 class="code">The HEAD Commit / git show</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20show%20HEAD.gif">
+                        <h3 class="code-title">The HEAD Commit / git show</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20show%20HEAD.gif">
+                        </div>
+
+
+                        <p>The command <span class="code">git show
+                        [commit]</span> is handy if we want to see exactly what
+                        a commit changed. The command prints out a log of all
+                        the lines added/deleted, and files changed in the
+                        specified commit. The HEAD commit is the most recent
+                        commit. To see previous commits, use the syntax
+                        <span class="code">HEAD~n</span> where <span class=
+                        "code">n</span> is how far back past the HEAD commit
+                        you want to go. For example, the second most recent
+                        commit would be <span class="code">HEAD~1</span>.</p>
+
+
+                        <div class="button" id="checkout1">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "http://www.sbf5.com/~cduan/technical/git/git-1.shtml#heads"
+                            target="_blank">Learn more about HEAD</a>
+                        </div>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-show" target=
+                            "_blank">Learn more about Git Show</a>
+                        </div>
                     </div>
-                    <p>The command <span class="code">git show [commit]</span> is handy if we want to see exactly what a commit changed. The command prints out a log of all the lines added/deleted, and files changed in the specified commit. The HEAD commit is the most recent commit. To see previous commits, use the syntax <span class="code">HEAD~n</span> where <span class="code">n</span> is how far back past the HEAD commit you want to go. For example, the second most recent commit would be <span class="code">HEAD~1</span>.</p>
-                    <div class="button"  id="checkout1">
-                    <a class="btn btn-learnmore page-scroll" href="http://www.sbf5.com/~cduan/technical/git/git-1.shtml#heads" target="_blank">Learn more about HEAD</a>
-                        </div>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-show" target="_blank">Learn more about Git Show</a>
-                        </div>   
-                        </div>
+
+
                     <div class="command">
-                    <h3 class="code">git checkout</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20checkout.gif">
-                    </div>
-                    <p>So sometimes, you make mistakes. Hey, we all do. What happens if you make mistakes in your code, we know how to use <span class="code">git diff</span> to check exactly what you changed (if you can't remember, no biggie, just check up the page a bit). If you regret making all your changes in a certain file, you can use <span class="code">git checkout HEAD [filename]</span> to restore a certain file to its HEAD version. We'll learn more about <span class="code">git checkout</span> later when we learn more about branches.</p>
-                  <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Checkout</a>
-                        </div> 
+                        <h3 class="code-title">git checkout</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20checkout.gif">
                         </div>
+
+
+                        <p>So sometimes, you make mistakes. Hey, we all do.
+                        What happens if you make mistakes in your code, we know
+                        how to use <span class="code">git diff</span> to check
+                        exactly what you changed (if you can't remember, no
+                        biggie, just check up the page a bit). If you regret
+                        making all your changes in a certain file, you can use
+                        <span class="code">git checkout HEAD [filename]</span>
+                        to restore a certain file to its HEAD version. We'll
+                        learn more about <span class="code">git checkout</span>
+                        later when we learn more about branches.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-checkout" target=
+                            "_blank">Learn more about Git Checkout</a>
+                        </div>
+                    </div>
+
+
                     <div class="command">
-                    <h3 class="code">git reset</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/gif%20reset%20HEAD.gif">
-                    </div>
-                    <p>It is good Git practice to keep commits to only one topic. If you've accidentally <span class="code">stage</span>d a file for a commit (remember how we learnt that at the beginning?) The command <span class="code">git reset HEAD [filename]</span> resets the file in the staging area to the HEAD version (from the last commit) but keeps the changes in the working directory (as opposed to <span class="code">git checkout</span>, which changes the file in the working directory itself back to the HEAD commit.</p>
-                    <h4 class="code">git reset SHA</h4>
-                        <div class="code-gif">
-                    <img src="static/gif/git%20reset%20SHA.gif">
-                    </div>
-                    
-                    <p><span class="code">git reset</span> can also be used to reset your project to a happier, stabler commit. Like in the gif above, you'll need the first seven characters of the ID number, or SHA, written in <span class="code">git log</span>. Alternatively, you can use the <span class="code">HEAD~n</span> syntax instead, if you wish. To recap, <span code="code">reset</span> reverts the project to a previous state, and Git forgets about the commits that went after that state.</p>
-                    <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-reset" target="_blank">Learn more about Git Reset</a>
-                        </div> 
+                        <h3 class="code-title">git reset</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/gif%20reset%20HEAD.gif">
                         </div>
+
+
+                        <p>It is good Git practice to keep commits to only one
+                        topic. If you've accidentally <span class=
+                        "code">stage</span>d a file for a commit (remember how
+                        we learnt that at the beginning?) The command
+                        <span class="code">git reset HEAD [filename]</span>
+                        resets the file in the staging area to the HEAD version
+                        (from the last commit) but keeps the changes in the
+                        working directory (as opposed to <span class="code">git
+                        checkout</span>, which changes the file in the working
+                        directory itself back to the HEAD commit.</p>
+
+
+                        <h4 class="code-title">git reset SHA</h4>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20reset%20SHA.gif">
+                        </div>
+
+
+                        <p><span class="code">git reset</span> can also be used
+                        to reset your project to a happier, stabler commit.
+                        Like in the gif above, you'll need the first seven
+                        characters of the ID number, or SHA, written in
+                        <span class="code">git log</span>. Alternatively, you
+                        can use the <span class="code">HEAD~n</span> syntax
+                        instead, if you wish. To recap, <span>reset</span>
+                        reverts the project to a previous state, and Git
+                        forgets about the commits that went after that
+                        state.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-reset" target=
+                            "_blank">Learn more about Git Reset</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Branch Section -->
+
+
     <section class="branch-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 id="branch">Branching in Git</h1>
+
+
                     <div class="command">
-                    <h3 class="code">git branch</h3>
-                        <div class="code-gif">
-                        <img src="static/gif/git%20branch.gif">
+                        <h3 class="code-title">git branch</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20branch.gif">
                         </div>
-                    <p>Up to this point, we've been working in a single branch, <span class="code">master</span>. If you look on the terminal animations above, you see that <span class="code">(master)</span> appears on all the windows (except for this one :p ). Git allows for the creation of branches, which allow us to experiment with different versions of the project. A branch is essentially another instance of the project running within the project repo, allowing commits to be made that don't affect the <span class="code">master</span> branch.</p>
-                    
+
+
+                        <p>Up to this point, we've been working in a single
+                        branch, <span class="code">master</span>. If you look
+                        on the terminal animations above, you see that
+                        <span class="code">(master)</span> appears on all the
+                        windows (except for this one :p ). Git allows for the
+                        creation of branches, which allow us to experiment with
+                        different versions of the project. A branch is
+                        essentially another instance of the project running
+                        within the project repo, allowing commits to be made
+                        that don't affect the <span class="code">master</span>
+                        branch.</p>
                     </div>
+
+
                     <div class="command">
-                    <h4 class="code">git branch [branchname]</h4>
-                        <div class="code-gif">
-                        <img src="static/gif/git%20branch%20newbranch.gif">
+                        <h4 class="code-title">git branch [branchname]</h4>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20branch%20newbranch.gif">
                         </div>
-                    <p>You can also create branches with <span class="code">git branch</span>. Just add the branch name after the command, as shown in the gif above. Note that you are not automatically switched to the new branch.</p>
-                            <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-branch" target="_blank">Learn more about Git Branch</a>
-                        </div> 
-                    </div>
-                    <div class="command">
-                    <h3 class="code">git checkout</h3>
-                        <div class="code-gif">
-                        <img src="static/gif/git%20checkout%20%5Bbranch%5D.gif">
-                        </div>
-                    <p>Remember <span class="code">git checkout</span> from earlier? How we used it to reset a file to the HEAD version? This is also the command used to switch branches. If a branch exists, just run <span class="code">git checkout [branchname]</span> to switch to the branch specified.</p>
+
+
+                        <p>You can also create branches with <span class=
+                        "code">git branch</span>. Just add the branch name
+                        after the command, as shown in the gif above. Note that
+                        you are not automatically switched to the new
+                        branch.</p>
+
+
                         <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="#checkout1">Go to the first Git Checkout card</a>
-                        </div> 
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-branch" target=
+                            "_blank">Learn more about Git Branch</a>
+                        </div>
                     </div>
+
+
                     <div class="command">
-                    <h4 class="code">git checkout -b</h4>
-                        <div class="code-gif">
-                        <img src="static/gif/git%20checkout%20-b.gif"
+                        <h3 class="code-title">git checkout</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20checkout%20%5Bbranch%5D.gif">
                         </div>
-                    <p>You can actually combine both of the commands above into one easy command. Just run <span class="code">git checkout -b [branchname]</span> and a branch named [branchname] will be created. Notice that it automatically switches to your new branch. Handy!</p>
-                            <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Checkout</a>
-                        </div> 
+
+
+                        <p>Remember <span class="code">git checkout</span> from
+                        earlier? How we used it to reset a file to the HEAD
+                        version? This is also the command used to switch
+                        branches. If a branch exists, just run <span class=
+                        "code">git checkout [branchname]</span> to switch to
+                        the branch specified.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "#checkout1">Go to the first Git Checkout card</a>
+                        </div>
                     </div>
+
+
                     <div class="command">
-                        <h3 class="code">git merge</h3>
-                    <div class="code-gif">
-                        <img  id="mergeconflicts" src="static/gif/git%20merge.gif">
+                        <h4 class="code-title">git checkout -b</h4>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20checkout%20-b.gif">
                         </div>
-                    <p>So you've made an <i>awesome</i> addition to your code on another branch, and you want to add your changes to the main branch. Switch to the branch you want to pull the changes into, using <span class="code">git checkout [into-branch]</span> and then run <span class="code">git merge [from-branch]</span> where <span class="code">[from-branch]</span> is the branch where you want the changes to come from
+
+
+                        <p>You can actually combine both of the commands above
+                        into one easy command. Just run <span class="code">git
+                        checkout -b [branchname]</span> and a branch named
+                        [branchname] will be created. Notice that it
+                        automatically switches to your new branch. Handy!</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-checkout" target=
+                            "_blank">Learn more about Git Checkout</a>
                         </div>
+                    </div>
+
+
                     <div class="command">
-                        <h3 class="code">Fixing Merge Conflicts</h3>
-                        <p>Sometimes, when you try and use <span class="code">git merge</span> it will throw back an error message- something like <span class="code">Merge conflict in [filename]
-Automatic merge failed; fix conflicts and then commit the result.</span>. Open the file(s) the console gave you, and you'll see something like: <br><span class="code"><<<<<<< HEAD<br>
-master version of line<br>
-=======<br>
-otherbranch version of line<br>
->>>>>>> otherbranch</span><br> Delete <em>everything</em> except the version you want to keep. Make sure you remove all the Git markings, or Git will still think the merge conflict is present. To finish the merge, just run <span class="code">git commit</span> as normal.</p>
+                        <h3 class="code-title">git merge</h3>
+
+
+                        <div class="code-gif"><img id="mergeconflicts" src=
+                        "static/gif/git%20merge.gif">
                         </div>
-                        <div class="command">
-                        <h3 class="code">git branch -d</h3>
-                        <div class="code-gif">
-                            <img src="static/gif/git%20branch%20-d.gif">
-                            </div>
-                        <p>So you've finished with a branch, and <span class="code">merge</span>d the changes into the <span class="code">master</span> branch. If you don't need it anymore, run <span class="code">git branch -d [branchname]</span> to delete it.</p>
+
+
+                        <p>So you've made an <i>awesome</i> addition to your
+                        code on another branch, and you want to add your
+                        changes to the main branch. Switch to the branch you
+                        want to pull the changes into, using <span class=
+                        "code">git checkout [into-branch]</span> and then run
+                        <span class="code">git merge [from-branch]</span> where
+                        <span class="code">[from-branch]</span> is the branch
+                        where you want the changes to come from</p>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">Fixing Merge Conflicts</h3>
+
+
+                        <p>Sometimes, when you try and use <span class=
+                        "code">git merge</span> it will throw back an error
+                        message- something like <span class="code">Merge
+                        conflict in [filename] Automatic merge failed; fix
+                        conflicts and then commit the result.</span>. Open the
+                        file(s) the console gave you, and you'll see something
+                        like:<br>
+                        <span class="code">&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+                        HEAD<br>
+                        master version of line<br>
+                        =======<br>
+                        otherbranch version of line<br>
+                        &gt;&gt;&gt;&gt;&gt;&gt;&gt; otherbranch</span><br>
+                        Delete <em>everything</em> except the version you want
+                        to keep. Make sure you remove all the Git markings, or
+                        Git will still think the merge conflict is present. To
+                        finish the merge, just run <span class="code">git
+                        commit</span> as normal.</p>
+                    </div>
+
+
+                    <div class="command">
+                        <h3 class="code-title">git branch -d</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20branch%20-d.gif">
                         </div>
+
+
+                        <p>So you've finished with a branch, and <span class=
+                        "code">merge</span>d the changes into the <span class=
+                        "code">master</span> branch. If you don't need it
+                        anymore, run <span class="code">git branch -d
+                        [branchname]</span> to delete it.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-            
     <!-- Remote Section -->
+
+
     <section class="remote-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 id="remote">Using Git with GitHub</h1>
-                    <p>GitHub is a website that runs a Git hosting platform, where over 12 million users store and contribute to over 30 million projects. Many open-source software organisations, such as FOSSASIA, store their code in GitHub repos, where anyone can contribute to them. This following section will provide a brief introduction into GitHub, and commands used when dealing with remote repositories. For a way more in-depth guide to GitHub, click the link below. </p>
+
+
+                    <p>GitHub is a website that runs a Git hosting platform,
+                    where over 12 million users store and contribute to over 30
+                    million projects. Many open-source software organisations,
+                    such as FOSSASIA, store their code in GitHub repos, where
+                    anyone can contribute to them. This following section will
+                    provide a brief introduction into GitHub, and commands used
+                    when dealing with remote repositories. For a way more
+                    in-depth guide to GitHub, click the link below.</p>
+
+
                     <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://guides.github.com" target="_blank">Learn more about GitHub</a>
-                        </div> 
+                        <a class="btn btn-learnmore page-scroll" href=
+                        "https://guides.github.com" target="_blank">Learn more
+                        about GitHub</a>
+                    </div>
+
+
                     <div class="command">
-                    <h3 class="code">git clone</h3>
-                        <div class="code-gif">
-                        <img src="static/gif/git%20clone.gif">
+                        <h3 class="code-title">git clone</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20clone.gif">
                         </div>
-                    <p>Once, you've signed up/logged into GitHub, you'll want to start contributing to a repo. Once you find one that suits your fancy, click the 'Fork' button to copy the main repo into a personal version listed under your name. All GitHub repos have the url <span class="code">github.com/username/reponame</span>. Once you're in your personal repo, find the HTTPS path in the top right of the repo (see above gif). Make sure you have your personal fork, as you probably won't be able to <span class="code">push</span> your changes to the main repo. Copy that URL, and open up a terminal in the folder where you'd like the repo folder to be located. Run <span class="code">git clone [url]</span> and a folder containing the HEAD commit from the GitHub repo will now exist locally on your computer.</p>
+
+
+                        <p>Once, you've signed up/logged into GitHub, you'll
+                        want to start contributing to a repo. Once you find one
+                        that suits your fancy, click the 'Fork' button to copy
+                        the main repo into a personal version listed under your
+                        name. All GitHub repos have the url <span class=
+                        "code">github.com/username/reponame</span>. Once you're
+                        in your personal repo, find the HTTPS path in the top
+                        right of the repo (see above gif). Make sure you have
+                        your personal fork, as you probably won't be able to
+                        <span class="code">push</span> your changes to the main
+                        repo. Copy that URL, and open up a terminal in the
+                        folder where you'd like the repo folder to be located.
+                        Run <span class="code">git clone [url]</span> and a
+                        folder containing the HEAD commit from the GitHub repo
+                        will now exist locally on your computer.</p>
+
+
                         <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-clone" target="_blank">Learn more about Git Clone</a>
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-clone" target=
+                            "_blank">Learn more about Git Clone</a>
                         </div>
                     </div>
+
+
                     <div class="command">
-                    <h3 class="code">git pull</h3>
-                    <div class="code-gif">
-                        <img src="static/gif/git%20pull.gif"</div>  
-                    <p>So you've set up the repo from GitHub- great! Now, how do you sync to/from the GitHub server? One half of that is <span class="code">git pull origin [localbranch]. Origin</span> is the remote location, in our case GitHub. Think of <span class="code">git pull origin master</span> as like <span class="code">git merge origin</span>. <span class="code">Git pull</span> is basically a merge, if there is a merge conflict you have to deal with it in the same way too.</p>
+                        <h3 class="code-title">git pull</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20pull.gif">
+                        </div>
+
+
+                        <p>So you've set up the repo from GitHub- great! Now,
+                        how do you sync to/from the GitHub server? One half of
+                        that is <span class="code">git pull origin
+                        [localbranch]. Origin</span> is the remote location, in
+                        our case GitHub. Think of <span class="code">git pull
+                        origin master</span> as like <span class="code">git
+                        merge origin</span>. <span class="code">Git pull</span>
+                        is basically a merge, if there is a merge conflict you
+                        have to deal with it in the same way too.</p>
+
+
                         <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="#mergeconflicts" target="_blank">Remind me how to deal with merge conflicts</a>
-                        </div> 
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "#mergeconflicts" target="_blank">Remind me how to
+                            deal with merge conflicts</a>
+                        </div>
+
+
                         <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-pull" target="_blank">Learn more about Git Pull</a>
-                        </div> 
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-pull" target=
+                            "_blank">Learn more about Git Pull</a>
+                        </div>
                     </div>
+
+
                     <div class="command">
-                    <h3 class="code">git push</h3>
-                    <div class="code-gif">
-                    <img src="static/gif/git%20push.gif">
-                    </div>
-                    <p><span class="code">Git push</span> is the opposite of <span class="code">git pull</span> and the other half of the sync process. This command takes the commits not registered with the remote repo and registers them there, uploading the new changes to the server. Unlike <span class="code">pull, push</span> requires you to authenticate, just give it your GitHub username and password (assuming the repo is on GitHub!) and the upload should be successful. If not, you may have to use <span class="code">git pull</span> changes from <span class="code">origin</span> first.</p>
-                       <div class="button">
-                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-push" target="_blank">Learn more about Git Push</a>
+                        <h3 class="code-title">git push</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20push.gif">
+                        </div>
+
+
+                        <p><span class="code">Git push</span> is the opposite
+                        of <span class="code">git pull</span> and the other
+                        half of the sync process. This command takes the
+                        commits not registered with the remote repo and
+                        registers them there, uploading the new changes to the
+                            server. Unlike <span class="code">pull</span>, <span class="code">push</span>
+                        requires you to authenticate, just give it your GitHub
+                        username and password (assuming the repo is on GitHub!)
+                        and the upload should be successful. If not, you may
+                        have to use <span class="code">git pull</span> changes
+                        from <span class="code">origin</span> first.</p>
+
+
+                        <div class="button">
+                            <a class="btn btn-learnmore page-scroll" href=
+                            "https://git-scm.com/docs/git-push" target=
+                            "_blank">Learn more about Git Push</a>
                         </div>
                     </div>
+
+
                     <div class="command">
-                    <h3 class="code">git rebase</h3>
-                    <div class="code-gif">
-                        <img src="static/gif/git%20rebase%20-i.gif"
+                        <h3 class="code-title">git rebase</h3>
+
+
+                        <div class="code-gif"><img src=
+                        "static/gif/git%20rebase%20-i.gif">
                         </div>
-                    <p><span class="code">Git rebase</span> is probably the most confusing command covered in this tutorial, but it's the most powerful. <span class="code">Rebase</span> is essentially moving a branch from one commit to another. It (like most Git commands) has many different options, but the one shown above, and the one arguably used the most often is <span class="code">git rebase -i HEAD~n</span>, which allows you to <span class="code">squash</span> or <span class="code">flatten</span> several different commits. Once Nano (or whatever your default text editor is) has loaded, you will see a list of all the commits you specified all marked <span class="code">pick</span>. You must keep at least one as <span class="code">pick</span>, but you can change commits listed below a <span class="code">pick</span> to either <span class="code">squash / s</span> or <span class="code">flatten /f</span> to merge their commits with the nearest-up commit marked as <span class="code">pick</span>, keeping and discarding their commit messages respectively. This comes in handy when making a pull request, as it means you only have to deal with one commit in the request.</p>
+
+
+                        <p><span class="code">Git rebase</span> is probably the
+                        most confusing command covered in this tutorial, but
+                        it's the most powerful. <span class=
+                        "code">Rebase</span> is essentially moving a branch
+                        from one commit to another. It (like most Git commands)
+                        has many different options, but the one shown above,
+                        and the one arguably used the most often is
+                        <span class="code">git rebase -i HEAD~n</span>, which
+                        allows you to <span class="code">squash</span> or
+                        <span class="code">flatten</span> several different
+                        commits. Once Nano (or whatever your default text
+                        editor is) has loaded, you will see a list of all the
+                        commits you specified all marked <span class=
+                        "code">pick</span>. You must keep at least one as
+                        <span class="code">pick</span>, but you can change
+                        commits listed below a <span class="code">pick</span>
+                        to either <span class="code">squash / s</span> or
+                        <span class="code">flatten /f</span> to merge their
+                        commits with the nearest-up commit marked as
+                        <span class="code">pick</span>, keeping and discarding
+                        their commit messages respectively. This comes in handy
+                        when making a pull request, as it means you only have
+                        to deal with one commit in the request.</p>
                     </div>
+
+
                     <div class="command">
-                        <h2>Congratulations- that's the end of this quick tutorial!</h2>
-                        <h3 class="code">Now What?</h3>
-                        <div class="code-gif"><img src="static/gif/ending.gif"</div>
-                        <p>FOSSASIA has a site specifically for this purpose, helping to get people introduced into the world of Free and Open-Source Software (FOSS). Feel free to check it out and get ideas for how to help- we'd love to have you on-board.</p>
-                        <p>Also, if you're a pre-University student aged 13-17, come check out Google Code-In. You can contribute to FOSSASIA with the help of mentors, and win awesome prizes too. That's where this site was made!</p>
-                            <a class="btn btn-default page-scroll" href="http://fossasia.github.io/whatcanidofor.fossasia.org">What Can I Do For FOSSASIA?</a>
-                            <div class="bottom-button">
-                    <a class="btn btn-default btn-install page-scroll" href="https://developers.google.com/open-source/gci/?hl=en" target='_blank'>Learn more about Google Code-In</a>
+                        <h2><b>Congratulations</b>- that's the end of this quick
+                        tutorial!</h2>
+
+
+                        <h3 class="code-title">Now What?</h3>
+
+
+                        <div class="code-gif"><img src="static/gif/ending.gif">
                         </div>
-                </div>
+
+
+                        <p>FOSSASIA has a site specifically for this purpose,
+                        helping to get people introduced into the world of Free
+                        and Open-Source Software (FOSS). Feel free to check it
+                        out and get ideas for how to help- we'd love to have
+                        you on-board.</p>
+
+
+                        <p>Also, if you're a pre-University student aged 13-17,
+                        come check out Google Code-In. You can contribute to
+                        FOSSASIA with the help of mentors, and win awesome
+                        prizes too. That's where this site was made!</p>
+                        <a class="btn btn-default page-scroll" href=
+                        "http://fossasia.github.io/whatcanidofor.fossasia.org">What
+                        Can I Do For FOSSASIA?</a>
+
+                        <div class="bottom-button">
+                            <a class="btn btn-default btn-install page-scroll"
+                            href=
+                            "https://developers.google.com/open-source/gci/?hl=en"
+                            target='_blank'>Learn more about Google Code-In</a>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-        <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Made by <a href="http://abuissink.github.io" target="_blank">Archie Buissink</a> for <a href="http://gci15.fossasia.org" target="_blank">FOSSASIA and Google Code-In 2015</a>.</p>
-      </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Made by <a href="http://abuissink.github.io"
+            target="_blank">Archie Buissink</a> for <a href=
+            "http://gci15.fossasia.org" target="_blank">FOSSASIA and Google
+            Code-In 2015</a>.</p>
+        </div>
     </footer>
-
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js">
+    </script> <!-- Bootstrap Core JavaScript -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script> <!-- Scrolling Nav JavaScript -->
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
+    <script src="js/jquery.easing.min.js">
+    </script>
+    <script src="js/scrolling-nav.js">
+    </script>
 </body>
-
 </html>
