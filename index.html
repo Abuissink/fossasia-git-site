@@ -157,9 +157,19 @@
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-log" target="_blank">Learn more about Git Log</a>
                         </div>      
                 <p>Awesome! You now know how to create a local repository, and commit files to it! Next up, we'll learn how to backtrack on changes made in previous commits.</p></div>
+                    <div class="command">
+                    <h3 class="code">git stash</h3>
+                    <div class="code-gif">
+                        <img src="static/gif/git stash.gif">
+                        </div>
+                    <p>So sometimes you want to save your changes with Git but don't want to make the step to a whole new commit next time. Easy! Just run <span class="code">git stash</span> and Git will make a record of your changes but not make a commit. To apply the stashed changes later, just run <span class="code">git stash apply</span>. This command comes in handy when you need to save your changes, when you switch branches, for instance (more on this later).</p>
+                        <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/book/en/v1/Git-Tools-Stashing" target="_blank">Learn more about Stashing in Git</a>
+                        </div>
+                    </div>
                 </div
             </div>
-        </div>
+            </div>
     </section>
 
     <!-- Backtrack Section -->
@@ -174,7 +184,7 @@
                     <img src="static/gif/git%20show%20HEAD.gif">
                     </div>
                     <p>The command <span class="code">git show [commit]</span> is handy if we want to see exactly what a commit changed. The command prints out a log of all the lines added/deleted, and files changed in the specified commit. The HEAD commit is the most recent commit. To see previous commits, use the syntax <span class="code">HEAD~n</span> where <span class="code">n</span> is how far back past the HEAD commit you want to go. For example, the second most recent commit would be <span class="code">HEAD~1</span>.</p>
-                    <div class="button">
+                    <div class="button"  id="checkout1">
                     <a class="btn btn-learnmore page-scroll" href="http://www.sbf5.com/~cduan/technical/git/git-1.shtml#heads" target="_blank">Learn more about HEAD</a>
                         </div>
                     <div class="button">
@@ -197,9 +207,11 @@
                     <img src="static/gif/gif%20reset%20HEAD.gif">
                     </div>
                     <p>It is good Git practice to keep commits to only one topic. If you've accidentally <span class="code">stage</span>d a file for a commit (remember how we learnt that at the beginning?) The command <span class="code">git reset HEAD [filename]</span> resets the file in the staging area to the HEAD version (from the last commit) but keeps the changes in the working directory (as opposed to <span class="code">git checkout</span>, which changes the file in the working directory itself back to the HEAD commit.</p>
-                    <div class="code-gif">
+                    <h4 class="code">git reset SHA</h4>
+                        <div class="code-gif">
                     <img src="static/gif/git%20reset%20SHA.gif">
                     </div>
+                    
                     <p><span class="code">git reset</span> can also be used to reset your project to a happier, stabler commit. Like in the gif above, you'll need the first seven characters of the ID number, or SHA, written in <span class="code">git log</span>. Alternatively, you can use the <span class="code">HEAD~n</span> syntax instead, if you wish. To recap, <span code="code">reset</span> reverts the project to a previous state, and Git forgets about the commits that went after that state.</p>
                     <div class="button">
                     <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-reset" target="_blank">Learn more about Git Reset</a>
@@ -222,7 +234,61 @@
                         <img src="static/gif/git%20branch.gif">
                         </div>
                     <p>Up to this point, we've been working in a single branch, <span class="code">master</span>. If you look on the terminal animations above, you see that <span class="code">(master)</span> appears on all the windows (except for this one :p ). Git allows for the creation of branches, which allow us to experiment with different versions of the project. A branch is essentially another instance of the project running within the project repo, allowing commits to be made that don't affect the <span class="code">master</span> branch.</p>
+                    
                     </div>
+                    <div class="command">
+                    <h4 class="code">git branch [branchname]</h4>
+                        <div class="code-gif">
+                        <img src="static/gif/git%20branch%20newbranch.gif">
+                        </div>
+                    <p>You can also create branches with <span class="code">git branch</span>. Just add the branch name after the command, as shown in the gif above. Note that you are not automatically switched to the new branch.</p>
+                            <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-branch" target="_blank">Learn more about Git Branch</a>
+                        </div> 
+                    </div>
+                    <div class="command">
+                    <h3 class="code">git checkout</h3>
+                        <div class="code-gif">
+                        <img src="static/gif/git%20checkout%20%5Bbranch%5D.gif">
+                        </div>
+                    <p>Remember <span class="code">git checkout</span> from earlier? How we used it to reset a file to the HEAD version? This is also the command used to switch branches. If a branch exists, just run <span class="code">git checkout [branchname]</span> to switch to the branch specified.</p>
+                        <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="#checkout1">Go to the first Git Checkout card</a>
+                        </div> 
+                    </div>
+                    <div class="command">
+                    <h4 class="code">git checkout -b</h4>
+                        <div class="code-gif">
+                        <img src="static/gif/git%20checkout%20-b.gif"
+                        </div>
+                    <p>You can actually combine both of the commands above into one easy command. Just run <span class="code">git checkout -b [branchname]</span> and a branch named [branchname] will be created. Notice that it automatically switches to your new branch. Handy!</p>
+                            <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Checkout</a>
+                        </div> 
+                    </div>
+                    <div class="command">
+                        <h3 class="code">git merge</h3>
+                    <div class="code-gif">
+                        <img src="static/gif/git%20merge.gif">
+                        </div>
+                    <p>So you've made an <i>awesome</i> addition to your code on another branch, and you want to add your changes to the main branch. Switch to the branch you want to pull the changes into, using <span class="code">git checkout [into-branch]</span> and then run <span class="code">git merge [from-branch]</span> where <span class="code">[from-branch]</span> is the branch where you want the changes to come from
+                        </div>
+                    <div class="command">
+                        <h3 class="code">Fixing Merge Conflicts</h3>
+                        <p>Sometimes, when you try and use <span class="code">git merge</span> it will throw back an error message- something like <span class="code">Merge conflict in [filename]
+Automatic merge failed; fix conflicts and then commit the result.</span>. Open the file(s) the console gave you, and you'll see something like: <br><span class="code"><<<<<<< HEAD<br>
+master version of line<br>
+=======<br>
+otherbranch version of line<br>
+>>>>>>> otherbranch</span><br> Delete <em>everything</em> except the version you want to keep. Make sure you remove all the Git markings, or Git will still think the merge conflict is present. To finish the merge, just run <span class="code">git commit</span> as normal.</p>
+                        </div>
+                        <div class="command">
+                        <h3 class="code">git branch -d</h3>
+                        <div class="code-gif">
+                            <img src="static/gif/git%20branch%20-d.gif">
+                            </div>
+                        <p>So you've finished with a branch, and <span class="code">merge</span>d the changes into the <span class="code">master</span> branch. If you don't need it anymore, run <span class="code">git branch -d [branchname]</span> to delete it.</p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -234,10 +300,26 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 id="remote">Using Git with GitHub</h1>
+                    <p>GitHub is a website that runs a Git hosting platform, where over 12 million users store and contribute to over 30 million projects. Many open-source software organisations, such as FOSSASIA, store their code in GitHub repos, where anyone can contribute to them. This following section will provide a brief introduction into GitHub, and commands used when dealing with remote repositories. For a way more in-depth guide to GitHub, click the link below. </p>
+                    <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://guides.github.com" target="_blank">Learn more about GitHub</a>
+                        </div> 
+                    <div class="command">
+                    <h3 class="code">git clone</h3>
+                        <div class="code-gif">
+                        <img src="static/gif/git%20clone.gif">
+                        </div>
+                    <p>Once, you've signed up/logged into GitHub, you'll want to start contributing to a repo. Once you find one that suits your fancy, find the HTTPS path in the top right of the repo (see above gif). Copy that URL, and open up a terminal in the folder where you'd like the repo folder to be located. Run <span class="code">git clone [url]</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+        <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Made by <a href="http://abuissink.github.io" target="_blank">Archie Buissink</a> for <a href="http://gci15.fossasia.org" target="_blank">FOSSASIA and Google Code-In 2015</a>.</p>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
