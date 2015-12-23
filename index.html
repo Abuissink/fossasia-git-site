@@ -269,7 +269,7 @@
                     <div class="command">
                         <h3 class="code">git merge</h3>
                     <div class="code-gif">
-                        <img src="static/gif/git%20merge.gif">
+                        <img  id="mergeconflicts" src="static/gif/git%20merge.gif">
                         </div>
                     <p>So you've made an <i>awesome</i> addition to your code on another branch, and you want to add your changes to the main branch. Switch to the branch you want to pull the changes into, using <span class="code">git checkout [into-branch]</span> and then run <span class="code">git merge [from-branch]</span> where <span class="code">[from-branch]</span> is the branch where you want the changes to come from
                         </div>
@@ -309,7 +309,19 @@ otherbranch version of line<br>
                         <div class="code-gif">
                         <img src="static/gif/git%20clone.gif">
                         </div>
-                    <p>Once, you've signed up/logged into GitHub, you'll want to start contributing to a repo. Once you find one that suits your fancy, find the HTTPS path in the top right of the repo (see above gif). Copy that URL, and open up a terminal in the folder where you'd like the repo folder to be located. Run <span class="code">git clone [url]</span></p>
+                    <p>Once, you've signed up/logged into GitHub, you'll want to start contributing to a repo. Once you find one that suits your fancy, click the 'Fork' button to copy the main repo into a personal version listed under your name. All GitHub repos have the url <span class="code">github.com/username/reponame</span>. Once you're in your personal repo, find the HTTPS path in the top right of the repo (see above gif). Make sure you have your personal fork, as you probably won't be able to <span class="code">push</span> your changes to the main repo. Copy that URL, and open up a terminal in the folder where you'd like the repo folder to be located. Run <span class="code">git clone [url]</span> and a folder containing the HEAD commit from the GitHub repo will now exist locally on your computer.</p>
+                    </div>
+                    <div class="command">
+                    <h3 class="code">git pull</h3>
+                    <div class="code-gif">
+                        <img src="static/gif/git%20pull.gif"</div>  
+                    <p>So you've set up the repo from GitHub- great! Now, how do you sync to/from the GitHub server? One half of that is <span class="code">git pull origin [localbranch]. Origin</span> is the remote location, in our case GitHub. Think of <span class="code">git pull origin master</span> as like <span class="code">git merge origin</span>. <span class="code">Git pull</span> is basically a merge, if there is a merge conflict you have to deal with it in the same way too.</p>
+                        <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="#mergeconflicts" target="_blank">Remind me how to deal with merge conflicts</a>
+                        </div> 
+                        <div class="button">
+                    <a class="btn btn-learnmore page-scroll" href="https://git-scm.com/docs/git-checkout" target="_blank">Learn more about Git Pull</a>
+                        </div> 
                     </div>
                 </div>
             </div>
