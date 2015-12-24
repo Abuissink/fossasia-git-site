@@ -204,25 +204,23 @@
 
                          <div class="tab-pane fade" id="other">
                             <h3 class="code-title">Other Linux Install Instructions</h3>
-                            <p>
-                                Gentoo:
-                                <span class="code">$ emerge --ask --verbose dev-vcs/git</span> </p>
-                             <p>
-                                 Arch Linux:
-                                 <span class="code">$ pacman -S git</span> </p>
-                             <p>
-                                 openSUSE:
-                                 <span class="code">$ zypper install git</span> </p>
-                             <p>
-                                 FreeBSD:
-                                 <span class="code">$ cd /usr/ports/devel/git</span><br>
-                                 <span class="code">$ make install</span></p>
-                             <p>
-                                 Solaris 11 Express:
-                                 <span class="code">$ pkg install developer/versioning/git</span></p>
-                             <p>
-                                 OpenBSD:
-                                 <span class="code">$ pkg_add git</span></p>
+                            <dl>
+                               <dt> Gentoo:</dt>
+                                <dd><span class="code">$ emerge --ask --verbose dev-vcs/git</span></dd>
+                             <dt>Arch Linux:</dt> 
+                             <dd><span class="code">$ pacman -S git</span></dd>
+                             <dt>openSUSE:</dt> 
+                            <dd><span class="code">$ zypper install git</span></dd>
+                            <dt>FreeBSD:</dt>
+                            <dd><span class="code">$ cd /usr/ports/devel/git</span><br>
+                                 <span class="code">$ make install</span></dd>
+                             <dt>
+                                 Solaris 11 Express: </dt>
+                             <dd>    <span class="code">$ pkg install developer/versioning/git</span></dd>
+                             <dt>
+                                 OpenBSD: </dt>
+                               <dd>  <span class="code">$ pkg_add git</span></dd>
+                             </dl>
                     </div>
                     </div>
                     <a class="btn btn-default page-scroll" href="#basic">Is Git
@@ -706,12 +704,12 @@
                         conflicts and then commit the result.</span>. Open the
                         file(s) the console gave you, and you'll see something
                         like:<br>
-                        <span class="code">&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+                       <div class="code-block" align="left">&lt;&lt;&lt;&lt;&lt;&lt;&lt;
                         HEAD<br>
                         master version of line<br>
                         =======<br>
                         otherbranch version of line<br>
-                        &gt;&gt;&gt;&gt;&gt;&gt;&gt; otherbranch</span><br>
+                        &gt;&gt;&gt;&gt;&gt;&gt;&gt; otherbranch</div> <br>
                         Delete <em>everything</em> except the version you want
                         to keep. Make sure you remove all the Git markings, or
                         Git will still think the merge conflict is present. To
