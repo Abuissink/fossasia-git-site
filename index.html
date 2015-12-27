@@ -204,23 +204,29 @@
 
                          <div class="tab-pane fade" id="other">
                             <h3 class="code-title">Other Linux Install Instructions</h3>
-                            <dl>
-                               <dt> Gentoo:</dt>
-                                <dd><span class="code">$ emerge --ask --verbose dev-vcs/git</span></dd>
-                             <dt>Arch Linux:</dt> 
-                             <dd><span class="code">$ pacman -S git</span></dd>
-                             <dt>openSUSE:</dt> 
-                            <dd><span class="code">$ zypper install git</span></dd>
-                            <dt>FreeBSD:</dt>
-                            <dd><span class="code">$ cd /usr/ports/devel/git</span><br>
-                                 <span class="code">$ make install</span></dd>
-                             <dt>
-                                 Solaris 11 Express: </dt>
-                             <dd>    <span class="code">$ pkg install developer/versioning/git</span></dd>
-                             <dt>
-                                 OpenBSD: </dt>
-                               <dd>  <span class="code">$ pkg_add git</span></dd>
-                             </dl>
+                            <table class="install_table" border="0">
+                                <tr>
+                               <td> Gentoo:</td>
+                                    <td><span class="code">$ emerge --ask --verbose dev-vcs/git</span></td></tr>
+                                <tr>
+                             <td>Arch Linux:</td> 
+                             <td><span class="code">$ pacman -S git</span></td>
+                                </tr><tr>
+                             <td>openSUSE:</td> 
+                            <td><span class="code">$ zypper install git</span></td>
+                                </tr><tr>
+                            <td>FreeBSD:</td>
+                                <td><span class="code">$ cd /usr/ports/devel/git</span></td>
+                                
+                               <td> <span class="code">$ make install</span></td>
+                                </tr><tr>
+                               <td> Solaris 11 Express: </td>
+                             <td>    <span class="code">$ pkg install developer/versioning/git</span></td>
+                             </tr><tr>
+                               <td> OpenBSD: </td>
+                               <td>  <span class="code">$ pkg_add git</span></td>
+                             </tr>
+                             </table>
                     </div>
                     </div>
                     <a class="btn btn-default page-scroll" href="#basic">Is Git
